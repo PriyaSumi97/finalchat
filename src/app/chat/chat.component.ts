@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import io from 'socket.io-client';
-const SOCKET_ENDPOINT= 'http://localhost:3000/';
+const SOCKET_ENDPOINT= 'https://mychatp.herokuapp.com/';
 import { UserServiceService } from '../user-service.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class ChatComponent implements OnInit {
   message: any;
   dbmessage: any=[];
   appendMessage: any;
-  private url = 'http://localhost:3000';
+  private url = 'https://mychatp.herokuapp.com';
   //receiver:any=[];
   receiver: any;
   myreceiver:any;

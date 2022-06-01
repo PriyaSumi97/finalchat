@@ -20,10 +20,10 @@ export class UserServiceService {
   }
   apiCall()
   {
-    return this.http.get(`https://mychatp.herokuapp.com/userslist`);
+    return this.http.get(`http://ddp.in.net/userslist`);
   }
    getReceiver(sender:any){
-     return this.http.get(`https://mychatp.herokuapp.com/users/chat/id=${this.user}?sender=${sender}`, {responseType: 'json'});
+     return this.http.get(`http://ddp.in.net/users/chat/id=${this.user}?sender=${sender}`, {responseType: 'json'});
    }
   get user_profile(){
     return localStorage.getItem('users');

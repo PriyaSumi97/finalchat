@@ -15,7 +15,6 @@ export class AppComponent implements OnInit{
   {
     
     this.profile= localStorage.getItem("users")
-    console.log(this.profile, 'aaaaaaaaaaaaaaa')
     if(this.profile != ''){
       this.user_profile= true;
     }  
